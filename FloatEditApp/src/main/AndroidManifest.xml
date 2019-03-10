@@ -22,7 +22,8 @@
         <activity
             android:name=".activity.CrashActivity"/>
         <service
-            android:name=".service.MainService"/>
+            android:name=".service.MainService"
+            android:exported="true"/>
     </application>
 
 </manifest>
