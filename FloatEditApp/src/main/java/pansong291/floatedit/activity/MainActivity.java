@@ -10,16 +10,20 @@ import android.provider.Settings;
 import android.view.View;
 import pansong291.floatedit.R;
 import pansong291.floatedit.service.MainService;
+import android.widget.EditText;
 
 public class MainActivity extends Zactivity 
 {
  Intent it;
+ EditText edt;
  
  @Override
  protected void onCreate(Bundle savedInstanceState)
  {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_main);
+  
+  edt = findViewById(R.id.edt);
   
   it = new Intent(this, MainService.class);
   requestFloatWindow(this);
@@ -33,6 +37,15 @@ public class MainActivity extends Zactivity
  public void onStopClick(View v)
  {
   stopService(it);
+ }
+ 
+ public void onIntentClick(View v)
+ {
+  Intent it = getPackageManager().getLaunchIntentForPackage(edt.getText().toString());
+  if(it != null)
+  {
+   startActivity(it);
+  }
  }
  
  public static void requestFloatWindow(final Zactivity ac)

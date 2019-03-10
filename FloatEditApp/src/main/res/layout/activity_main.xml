@@ -22,5 +22,20 @@
 		android:onClick="onStopClick"
 		android:background="@drawable/button"/>
 
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/edt"
+		android:textColor="#FF000000"
+		android:text="com.aide.ui"/>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:text="跳转"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onIntentClick"
+		android:background="@drawable/button"/>
+
 </LinearLayout>
 

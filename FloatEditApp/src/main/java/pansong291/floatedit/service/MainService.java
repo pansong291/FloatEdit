@@ -80,11 +80,6 @@ public class MainService extends Service
 
   //获取浮动窗口视图所在布局
   initLayout();
-  edt = mFloatLayout.findViewById(R.id.edt);
-  btn_copy = mFloatLayout.findViewById(R.id.btn_copy);
-  btn_cut = mFloatLayout.findViewById(R.id.btn_cut);
-  btn_paste = mFloatLayout.findViewById(R.id.btn_paste);
-  btn_close = mFloatLayout.findViewById(R.id.btn_close);
 
   //添加mFloatLayout
   mWindowManager.addView(mFloatLayout,wmParams);
@@ -123,6 +118,11 @@ public class MainService extends Service
  {
   LayoutInflater inflater = LayoutInflater.from(getApplication());
   mFloatLayout = (LinearLayout)inflater.inflate(R.layout.flowin_main, null);
+  edt = mFloatLayout.findViewById(R.id.edt);
+  btn_copy = mFloatLayout.findViewById(R.id.btn_copy);
+  btn_cut = mFloatLayout.findViewById(R.id.btn_cut);
+  btn_paste = mFloatLayout.findViewById(R.id.btn_paste);
+  btn_close = mFloatLayout.findViewById(R.id.btn_close);
  }
 
  private void initwmParamms()
@@ -142,7 +142,7 @@ public class MainService extends Service
 
   //设置悬浮窗口长宽数据  
   wmParams.width = LayoutParams.WRAP_CONTENT;
-  wmParams.height = LayoutParams.MATCH_PARENT;
+  wmParams.height = LayoutParams.WRAP_CONTENT;
  }
  
  @Override

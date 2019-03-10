@@ -2,7 +2,7 @@
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="wrap_content"
-	android:layout_height="match_parent"
+	android:layout_height="wrap_content"
 	android:orientation="vertical"
 	android:background="#E0FFFFFF">
 
@@ -26,7 +26,8 @@
 			android:layout_width="wrap_content"
 			android:text="复制"
 			android:background="@drawable/button"
-			android:id="@+id/btn_copy"/>
+			android:id="@+id/btn_copy"
+			android:textColor="#FF000000"/>
 
 		<Button
 			style="?android:attr/buttonBarButtonStyle"
@@ -34,7 +35,8 @@
 			android:layout_width="wrap_content"
 			android:text="剪切"
 			android:background="@drawable/button"
-			android:id="@+id/btn_cut"/>
+			android:id="@+id/btn_cut"
+			android:textColor="#FF000000"/>
 
 		<Button
 			style="?android:attr/buttonBarButtonStyle"
@@ -42,7 +44,8 @@
 			android:layout_width="wrap_content"
 			android:text="粘贴"
 			android:background="@drawable/button"
-			android:id="@+id/btn_paste"/>
+			android:id="@+id/btn_paste"
+			android:textColor="#FF000000"/>
 
 		<Button
 			style="?android:attr/buttonBarButtonStyle"
@@ -50,7 +53,8 @@
 			android:layout_width="wrap_content"
 			android:text="关闭"
 			android:background="@drawable/button"
-			android:id="@+id/btn_close"/>
+			android:id="@+id/btn_close"
+			android:textColor="#FF000000"/>
 
 	</LinearLayout>
 
