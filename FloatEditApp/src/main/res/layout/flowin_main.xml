@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#E0FFFFFF">
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textMultiLine"
+		android:layout_width="400dp"
+		android:lines="20"
+		android:id="@+id/edt"
+		android:textColor="#FF000000"
+		android:gravity="start"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="复制"
+			android:background="@drawable/button"
+			android:id="@+id/btn_copy"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="剪切"
+			android:background="@drawable/button"
+			android:id="@+id/btn_cut"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="粘贴"
+			android:background="@drawable/button"
+			android:id="@+id/btn_paste"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="关闭"
+			android:background="@drawable/button"
+			android:id="@+id/btn_close"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
